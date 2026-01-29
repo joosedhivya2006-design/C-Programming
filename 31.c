@@ -1,10 +1,12 @@
-//31.Print the product of two numbers
-
-#include <stdio.h>
+#include<stdio.h>
 int main(){
-	int a,b;
-	scanf("%d",&a);
-	scanf("%d",&b);
-	printf("%d",a*b);
-	return 0;
+    int n,amnt,sum;
+    sum=0;
+    scanf("%d",&n);
+    for(int i=1;i<=n;i++){
+        scanf("%d",&amnt);
+        sum=sum+amnt;
+    }
+    printf("Total Collection: %d",sum);
+    return 0;
 }
