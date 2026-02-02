@@ -14,13 +14,22 @@ int main() {
     if (arr[0] > arr[1]) {
         largest = arr[0];
         secondLargest = arr[1];
-    } else {
+    } 
+    else if(arr[0]==arr[1]){
+        largest=arr[0];
+        secondLargest=arr[2];
+    }
+    else {
         largest = arr[1];
         secondLargest = arr[0];
     }
     if(arr[0]<arr[1]){
         smallest=arr[0];
         secondSmallest=arr[1];
+    }
+    else if(arr[0]==arr[1]){
+        smallest=arr[0];
+        secondSmallest=arr[2];
     }
     else{
         smallest=arr[1];
