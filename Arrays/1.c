@@ -14,16 +14,20 @@ int main() {
     if (arr[0] > arr[1]) {
         largest = arr[0];
         secondLargest = arr[1];
-    } else {
+    } else if(arr[0]<arr[1]){
         largest = arr[1];
         secondLargest = arr[0];
     }
+    else if(arr[0]==arr[1]){
+        largest=arr[0];
+        secondLargest=arr[2];
+    }
     for (int i = 2; i < n; i++) {
-        if (arr[i] > largest) {
+        if (arr[i] >= largest) {
             secondLargest = largest;
             largest = arr[i];
         }
-        else if (arr[i] < largest && arr[i] > secondLargest) {
+        else if (arr[i] <largest && arr[i] >secondLargest) {
             secondLargest = arr[i];
         }
     }
